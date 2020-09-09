@@ -5,12 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Page 2</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      label {
+        float: left;
+        width: 150px;
+        text-align: right;
+        padding-right: 5px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      input {
+        width: 50%;
+      }
+      input[type="checkbox"],
+      [type="radio"],
+      [type="submit"],
+      [type="reset"] {
+        width: unset;
+      }
+      .specialLabel {
+        float: unset;
+        width: unset;
+      }
+      input[type="radio"] {
+        margin-left: 160px;
+      }
+
+      header,
+      main,
+      footer {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #777777;
+      }
+
+      p.someclass {
+        color: red;
+      }
+      /*octothorpe*/
+      #sec1 {
+        margin-left: 50px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      section p {
+        text-decoration: underline;
+      }
+
+      main > p {
+        color: green;
+      }
+    </style>
   </head>
   <body>
     <h1>Page 2</h1>
-
     <a href="index.html">Go to Home Page</a>
     <br />
     <a href="page1.html">Go to Page 1</a>
+    <br /><br />
+
+    <header>
+      <h1>this is my page heading</h1>
+    </header>
+    <main>
+      <h1>this is the main section</h1>
+      <nav>
+        <a href="index.html">Go to Home Page</a>
+        <br />
+        <a href="page1.html">Go to Page 1</a>
+      </nav>
+
+      <h2>second level heading</h2>
+      <article>
+        <section id="sec1">
+          <p class="someclass">some text</p>
+          <p class="someclass">some other text</p>
+          <p>more text</p>
+        </section>
+        <section id="sec2">
+          <p class="someclass">some text2</p>
+          <p class="someclass">some other2 text</p>
+          <p>more text2</p>
+        </section>
+        <p>standalone paragraph 1</p>
+        <p>standalone paragraph 2</p>
+      </article>
+
+      <h2>Contact Us</h2>
+    </main>
+    <footer>
+      &copy;2020
+    </footer>
+
+    <form method="post">
+      <fieldset>
+        <legend>Basic Information</legend>
+        <br />
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" /> <br /><br />
+
+        <label for="lastName" class="someclass">Last Name: </label>
+        <input type="text" name="lastName" /><br /><br />
+
+        <label for="emailId">Email: </label>
+        <input
+          type="email"
+          name="emailId"
+          placeholder="you@domain.com"
+        /><br /><br />
+
+        <label for="telephoneNum">Phone: </label>
+        <input
+          type="tel"
+          name="telephoneNum"
+          placeholder="enter your phone number in (123) 456-7890 format"
+        /><br /><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Address</legend>
+        <br />
+        <label for="state">State:</label>
+        <select name="state">
+          <option value=""></option>
+          <option value="CA">California</option>
+          <option value="IL" selected>Illinois</option>
+          <option value="IA">Iowa</option>
+        </select>
+        <br /><br />
+        <label for="newsletter">Send Newsletter?</label>
+        <input type="checkbox" name="newsletter" checked />Yes <br /><br />
+
+        <label for="favColor">Choose Color:</label><br />
+
+        <input type="radio" name="favColor" value="blue" />
+        <label for="favColor" class="specialLabel">Blue</label><br />
+
+        <input type="radio" name="favColor" value="green" checked />
+        <label for="favColor" class="specialLabel">Green</label><br />
+
+        <input type="radio" name="favColor" value="red" />
+        <label for="favColor" class="specialLabel">Red</label><br />
+      </fieldset>
+      <br />
+      <input type="submit" />&nbsp;<input type="reset" />
+    </form>
   </body>
 </html>

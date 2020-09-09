@@ -30,9 +30,21 @@
       dt {
         font-weight: bold;
       }
+
+      span {
+        color: red;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
     </style>
   </head>
   <body>
+    <img
+      src="https://www.deere.com/assets/images/jd_logo_desktop@2X.png"
+    /><br />
+    <img
+      src="https://www.deere.com/assets/images/common/home-page/golf-and-sports-turf-PSO-181x102.jpg"
+    />
+
     <h1>This is my first level heading</h1>
     <a href="page1.html">Go to Page 1</a>
     <br />
@@ -114,7 +126,7 @@
       <li>fifth item</li>
       <li>sixth item</li>
       <li>seventh item</li>
-      <li>eighth item</li>
+      <li>eighth <span>item</span></li>
       <li>ninth item</li>
     </ul>
 
@@ -122,7 +134,10 @@
       <dt>term 1</dt>
       <dd>this is the longer <strong>description</strong> for term 1</dd>
       <dt>term 2</dt>
-      <dd>this is the <em> longer </em> description for <i>term 2</i></dd>
+      <dd>
+        this is the <em> longer </em>
+        <span style="color: red;">description</span> for <i>term 2</i>
+      </dd>
     </dl>
   </body>
 </html>
