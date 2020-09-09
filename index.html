@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <style>
+      td {
+        border: 1px solid black;
+        text-align: center;
+        color: #0000ff;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      th {
+        border: 1px solid black;
+        text-align: center;
+        color: #ee0000;
+        text-decoration: underline;
+      }
+
+      table.center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      dt {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is my first level heading</h1>
+    <a href="page1.html">Go to Page 1</a>
+    <br />
+    <a href="page2.html">Go to Page 2</a>
+
+    <h1>NFL Results</h1>
+    <table style="margin-left: auto; margin-right: auto;">
+      <thead>
+        <tr>
+          <th>League</th>
+          <th>Conference</th>
+          <th>Week 1</th>
+          <th>Week 2</th>
+          <th>Week 3</th>
+          <th>Week 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">AFC</td>
+          <td>AFC 1</td>
+          <td>Cowboys</td>
+          <td>49ers</td>
+          <td>Bengals</td>
+          <td>Patriots</td>
+        </tr>
+        <tr>
+          <td>AFC 2</td>
+          <td>Redskins</td>
+          <td>Giants</td>
+          <td>Packers</td>
+          <td>Bills</td>
+        </tr>
+        <tr>
+          <td rowspan="2">NFC</td>
+          <td>NFC 1</td>
+          <td>Cowboys</td>
+          <td>Bengals</td>
+          <td>49ers</td>
+          <td>Patriots</td>
+        </tr>
+        <tr>
+          <td>NFC 2</td>
+          <td>Bills</td>
+          <td>Redskins</td>
+          <td>Giants</td>
+          <td>Packers</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td></td>
+        <td></td>
+        <td>23</td>
+        <td>45</td>
+        <td>67</td>
+        <td>22</td>
+      </tfoot>
+    </table>
+
+    <!--
+    <h2>second level heading</h2>
+    <h6>h6 level heading</h6>
+    <hr width="50%" align="left" />
+    <p>
+      This is my first <br />
+      web page.
+    </p>
+    -->
+
+    <h1>Lists</h1>
+    <ol>
+      <li>first item</li>
+      <li>second item</li>
+      <li>third item</li>
+      <li>fourth item</li>
+    </ol>
+
+    <ul>
+      <li>fifth item</li>
+      <li>sixth item</li>
+      <li>seventh item</li>
+      <li>eighth item</li>
+      <li>ninth item</li>
+    </ul>
+
+    <dl>
+      <dt>term 1</dt>
+      <dd>this is the longer <strong>description</strong> for term 1</dd>
+      <dt>term 2</dt>
+      <dd>this is the <em> longer </em> description for <i>term 2</i></dd>
+    </dl>
+  </body>
+</html>
