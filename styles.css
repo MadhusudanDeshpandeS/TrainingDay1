@@ -1,0 +1,48 @@
+label {
+  float: left;
+  width: 150px;
+  text-align: right;
+  padding-right: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+input {
+  width: 50%;
+}
+input[type="checkbox"],
+[type="radio"],
+[type="submit"],
+[type="reset"] {
+  width: unset;
+}
+.specialLabel {
+  float: unset;
+  width: unset;
+}
+input[type="radio"] {
+  margin-left: 160px;
+}
+
+header,
+main,
+footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #777777;
+}
+
+p.someclass {
+  color: red;
+}
+/*octothorpe*/
+#sec1 {
+  margin-left: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+section p {
+  text-decoration: underline;
+}
+
+main > p {
+  color: green;
+}
